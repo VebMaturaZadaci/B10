@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Prevedi";
+}
+<form method="post">
+    <div class="form-group">
+        <br />
+        <br />
+        <label class="control-label" asp-for="Smer"></label>
+        <select asp-for="Smer">
+            <option value="0">Engleski -> Srpski</option>
+            <option value="1">Srpski -> Engelski</option>
+        </select><br /><br />
+
+        <label class="control-label" asp-for="Engleski"></label>
+        <input type="text" asp-for="Engleski" value="@Model.eng"/><br /><br />
+
+        <label class="control-label" asp-for="Srpski"></label>
+        <input type="text" asp-for="Srpski" value="@Model.srp"/><br /><br />
+
+        <label class="control-label" asp-for="Opis"></label>
+        <input style="width:300px;height:100px" type="text" asp-for="Opis" value="@Model.op"/><br /><br />
+
+        <button type="submit" class="btn-light">Prevedi</button>
+    </div>
+</form>
+

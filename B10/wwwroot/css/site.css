@@ -1,0 +1,45 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.naslov {
+    height: 70px;
+    width: 100%;
+    padding-left: 10px;
+    background-color: #2164cf;
+    color: white;
+}
+.navigacija {
+    padding-left: 20px;
+    height: 40px;
+    width: 100%;
+    background-color: #0c3c87;
+}
+.dugme {
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 0px;
+    background-color: #082d66;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    padding-top: 10px;
+}

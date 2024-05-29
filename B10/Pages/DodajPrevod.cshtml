@@ -1,0 +1,23 @@
+﻿@page
+@model B10.Pages.DodajPrevodModel
+@{
+    ViewData["Title"] = "Dodaj prevod";
+}
+
+<form method="post">
+    <div class="form-group">
+        <label class="control-label" asp-for="Engleski"></label>
+        <input type="text" asp-for="Engleski" />
+        <span asp-validation-for="Engleski"></span><br /><br />
+
+        <label class="control-label" asp-for="Srpski"></label>
+        <input type="text" asp-for="Srpski" />
+        <span asp-validation-for="Srpski"></span><br /><br />
+
+        <label class="control-label" asp-for="Opis"></label>
+        <textarea asp-for="Opis"></textarea>
+        <span asp-validation-for="Opis"></span><br /><br />
+
+        <button type="submit" class="btn-light">Dodaj</button>
+    </div>
+</form>
